@@ -1,4 +1,4 @@
-(ns COSMOS.core
+(ns cosmos.core
   (:require [config])
   (:use [clojure.core.match :only [match]]))
 
