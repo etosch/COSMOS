@@ -1,6 +1,5 @@
 (ns cosmos.core
-  (:require [config])
-  (:use [clojure.core.match :only [match]]))
+  (:require [cosmos.config :as config]))
 
 (def last-computed
      "Returns a map of the last computed cosmos data."

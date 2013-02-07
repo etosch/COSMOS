@@ -1,0 +1,23 @@
+# COSMOS
+
+FIXME: write description
+
+## Usage
+
+lein run <version> <logtype> <logfolder>
+
+<version> from ::cosmos-1
+<logtype> from ::csv, ::pivot, ::push, ::ecj
+<logfolder> folder name to be analysed from inside src/logs
+
+csv files must have headers. There is no default ordering to the csvs. At a minimum, csvs must have the following columns
+* *run* - a unique identifier for this run
+* *generation* - the generation number
+* *fitnesses* - the values obtained from the function used to order the individuals. 
+The fitnesses are interpreted to be an array of values. If the data is pivoted so that each individual gets an entry, then use the identifier :pivot
+
+## License
+
+Copyright (C) 2012 FIXME
+
+Distributed under the Eclipse Public License, the same as Clojure.
